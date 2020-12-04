@@ -1,0 +1,115 @@
+body, html{
+	padding: 0px;
+	margin: 0px;
+	font-family: arial;
+	color: #333 !important;
+}
+
+h1, h2, h3, h4, h5{
+	padding: 0px;
+	margin: 0px;
+}
+
+.tasks{
+	position: fixed;
+	margin-left: -225px !important;
+	width: 450px;
+	background: #eee;
+	box-shadow: 0px 0px 3px grey;
+	margin: 10px;
+	border-radius: 6px;
+	display: block;
+	float: left;
+	padding: 14px;
+	max-height: 90vh;
+}
+
+.content{
+	height: 70vh;
+	overflow: hidden auto;
+}
+
+::-webkit-scrollbar{
+	width: 8px;
+	cursor: pointer !important;
+	background: #aaa;
+	border-radius: 6px;
+}
+::-webkit-scrollbar-thumb{
+	background: #333;
+	cursor: pointer !important;
+	border-radius: 6px;
+}
+
+.tasks > button, .updates > button,
+.tasks > button:focus, .updates > button:focus{
+	display: block;
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+	border-radius: 6px;
+	border: solid 1px grey;
+	font-weight: bold;
+	background: #fff;
+	color: #3232be;
+	cursor: pointer;
+
+	box-shadow: 0px 0px 3px grey;
+}
+
+.copy, .copy:hover, .copy:focus{
+	float: right;
+}
+
+.copy, .copy:hover, .copy:focus,
+.remove, .remove:hover, .remove:focus,
+.save, .save:hover, .save:focus{
+	text-decoration: none;
+	font-size: 14px;
+	margin: 10px 10px 0px 10px;
+	color: #333;
+	cursor: pointer;
+}
+
+.remove, .remove:hover, .remove:focus{
+	font-size: 18px;
+	position: relative;
+	margin-left: 100%;
+	left: -25px;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content:"";
+}
+
+.ttask{
+	display: block;
+	width: 99%;
+	min-height: 50px;
+	border-radius: 6px;
+	font-weight: bold;
+	background: #fff;
+	box-shadow: 0px 0px 3px grey;
+	color: #3232be;
+	cursor: pointer;
+	padding: 10px 0px;
+	margin: 10px 1px 1px 1px;
+}
+
+.ttask label{
+	display: block;
+	margin: 10px 10px;
+	position: relative;
+}
+
+input[type='text']{
+	display: block;
+	width: 98%;
+	height: 25px;
+	padding: 0px 5px;
+}
+
+#text{
+	position: absolute;
+}

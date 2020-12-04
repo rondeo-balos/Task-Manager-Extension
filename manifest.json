@@ -1,0 +1,14 @@
+{
+    "name": "WGS Task Manager",
+    "description": "WGS Task Manager",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions":["tabs","storage"],
+    "background":{
+        "scripts":["background.js"],
+        "persistent": false
+    },
+    "browser_action":{
+        "default_title":"Open Task Manager"
+    }
+}

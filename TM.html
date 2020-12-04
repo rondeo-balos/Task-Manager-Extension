@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<meta name='viewport' content='width=device-width'>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<div id='text' contenteditable="true"></div>
+<div style="position: absolute; right: 0px;">
+Notes<br>
+<textarea id='notes' style="width: 300px; height: 90vh;">	
+</textarea>
+</div>
+
+<div class='tasks' draggable="true">
+	<h3>Tasks</h3>
+	<div class='content' id='tcontent'></div>
+	<button id='addt_btn'>Add Task</button>
+	<a href="#copy" class='copy' id='report_link'>Report</a>
+	<a href='#copy' class='copy' id='update_link'>Update</a>
+</div>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type='text/javascript' src="main.js"></script>
+<script type="text/javascript" src='draggable.js'></script>
